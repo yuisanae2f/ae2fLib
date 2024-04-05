@@ -8,9 +8,10 @@
 > Each of the headers which has any of critical dependencies would try to find it by including.  
 > If you want it not, define AE2F_IGNORE_MISSINGS to halt it.
 
-# AE2F_CPP
+# `AE2F_CPP`
 > Most of the code is written in Language of C.  
-> If you are to use these in a landscape of C++, define AE2F_CPP to declare it.
+> If you are to use these in a landscape of C++, define `AE2F_CPP` to declare it.  
+> Inlined class would be generated.
 
 # Usage method
 Check the critical dependency.
@@ -27,10 +28,3 @@ Define the AE2F_PATH_C for .lib path.
 ```c
 #define AE2F_PATH_C "path/for/your/lib/"
 ```
-
-# In a case of C++:
-> Some of these libraries has a version for C++.
-
-AE2F_PATH_CPP
-> Unlike the existing libraries, the one with a suffix of _Plus finds its .lib with a value of AE2F_PATH_CPP.  
-> If you are to use them both, you need to define those two both.
