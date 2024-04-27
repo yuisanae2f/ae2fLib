@@ -1,4 +1,7 @@
 # ae2fLib : C
+> is now managed as CMake.
+> is the static library now.
+
 > is the project of separating the code from [CPure](https://github.com/yuisanae2f/CPure).  
 > Separated code will be updated here.
 
@@ -18,13 +21,5 @@ Check the critical dependency.
 > You could check via each document which matches the header.  
 > The top of the each pages shows the list of critical dependencies.  
 
-Check the directory for linkers.
-> You could find the library files which has an extension of lib and dll.  
-> Take the file which has the name of the library you want.
-
-Define the AE2F_PATH_C for .lib path.
-> Each headers at the very first has the macros for implicit linking for .lib.  
-> Once global directory for dll AE2F_PATH_C defined, rest will be done automatically.  
-```c
-#define AE2F_PATH_C "path/for/your/lib/"
-```
+# include
+> On `include`, headers will be placed at `ae2fLib/libName/header.h`.
