@@ -17,9 +17,33 @@
 > Inlined class would be generated.
 
 # Usage method
-Check the critical dependency.
+> Check the critical dependency.  
 > You could check via each document which matches the header.  
 > The top of the each pages shows the list of critical dependencies.  
 
 # include
 > On `include`, headers will be placed at `ae2fLib/libName/header.h`.
+
+# Structure
+> is the primitive structures applicable for a C landscape.  
+> has a prefix of `ptr` as the pointer of this.
+
+> Would be declared similiar to this.
+```c
+typedef struct ae2f_Whatever {
+    int member;
+}* ptr_ae2f_Whatever;
+```
+
+# Functions
+> Primitive functions are declared in global scope.  
+
+> receives the pointer for an [`Structure`](#structure) as a receiver.  
+
+# Abstractor
+> contains only a pointer of the [`primitive types`](#structure).  
+> has the inline function which calls the original functions.
+
+# Classes
+> contains the full instance of the [`Structure`](#structure).  
+> expands certain [`Abstractor`](#abstractor) in order to use functions related to it.
