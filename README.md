@@ -29,6 +29,8 @@
 > has a prefix of `ptr` as the pointer of this.
 
 > Would be declared similiar to this.
+
+Code
 ```c
 typedef struct ae2f_Whatever {
     int member;
@@ -40,9 +42,51 @@ typedef struct ae2f_Whatever {
 
 > receives the pointer for an [`Structure`](#structure) as a receiver.  
 
+# def
+> An automatic type definer.  
+
+> could access the type of its original and pointer easily.
+
+Code
+```cpp
+namespace ae2f {
+	template<typename t>
+	class def {
+	public:
+		typedef t orig;
+		typedef t* ptr;
+	};
+}
+```
+
+## t
+> the type to introduce.
+
+## orig
+> its original type.
+
+Code
+```cpp
+typedef t orig;
+```
+
+## ptr
+> type of pointer of [`original type`](#orig).
+
+Code
+```cpp
+typedef t* ptr;
+```
+
 # Abstractor
 > contains only a pointer of the [`primitive types`](#structure).  
 > has the inline function which calls the original functions.
+
+> has the inheritance of [`def`](#def) for its [primitive type](#structure).
+
+## raw
+> Each abstractor has the function of `raw`.  
+> This function would return the current pointer which this class contains.
 
 # Classes
 > contains the full instance of the [`Structure`](#structure).  
