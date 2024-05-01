@@ -19,7 +19,7 @@
 # Usage method
 > Check the critical dependency.  
 > You could check via each document which matches the header.  
-> The top of the each pages shows the list of critical dependencies.  
+> The top of each page shows the list of critical dependencies.  
 
 # include
 > On `include`, headers will be placed at `ae2fLib/libName/header.h`.
@@ -28,7 +28,7 @@
 > is the primitive structures applicable for a C landscape.  
 > has a prefix of `ptr` as the pointer of this.
 
-> Would be declared similiar to this.
+> Would be declared similar to this.
 
 Code
 ```c
