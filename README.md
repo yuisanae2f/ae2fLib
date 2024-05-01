@@ -9,7 +9,7 @@
 
 # AE2F_IGNORE_MISSINGS
 > Each of the headers which has any of critical dependencies would try to find it by including.  
-> If you want it not, define AE2F_IGNORE_MISSINGS to halt it.
+> If you want it not, define `AE2F_IGNORE_MISSINGS` to halt it.
 
 # `AE2F_CPP`
 > Most of the code is written in Language of C.  
