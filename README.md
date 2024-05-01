@@ -80,7 +80,7 @@ typedef t* ptr;
 
 # Abstractor
 > contains only a pointer of the [`primitive types`](#structure).  
-> has the inline function which calls the original functions.
+> has the inline function which calls [`the original functions`](#functions).
 
 > has the inheritance of [`def`](#def) for its [primitive type](#structure).
 
