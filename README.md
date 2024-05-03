@@ -11,10 +11,11 @@
 > Each of the headers which has any of critical dependencies would try to find it by including.  
 > If you want it not, define `AE2F_IGNORE_MISSINGS` to halt it.
 
-# `AE2F_CPP`
-> Most of the code is written in Language of C.  
-> If you are to use these in a landscape of C++, define `AE2F_CPP` to declare it.  
-> Inlined class would be generated.
+# Headers separation
+> In order to use the code of C++, include the header with an extension of `.hpp`.  
+> In order to use the code of C, include the header with an extension of `.h`.
+
+> Headers with an extension of `.hpp` does not contain [`Abstractors`](#abstractor) and [`Classes`](#classes).
 
 # Usage method
 > Check the critical dependency.  
